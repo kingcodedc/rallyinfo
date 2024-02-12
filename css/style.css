@@ -156,7 +156,7 @@ h2 {
     
     .info {
         margin: 0;
-        margin-bottom: 60%;
+        margin-bottom: 70%;
     }
 
     .card {
@@ -173,7 +173,7 @@ h2 {
     nav {
         display: flex;
         justify-content: center;
-        margin-top: 40%;
+        margin-top: 45%;
     }
     
     nav ul {
@@ -207,7 +207,7 @@ h2 {
     }
 
     .info p {
-        margin-top: 140%;
+        margin-top: 125%;
         margin-left: 15%;
         margin-right: 15%;
     }
