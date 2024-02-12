@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Aldrich, sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)), url(img/rally_bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+
+.navbar {
+    height: 15%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    background-size: cover;
+    border-radius: 50% 90% 50% 90%;
+    box-shadow: 0 0 15px #fff;
+}
+
+nav {
+    flex: 1;
+    text-align: center;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #1a0049;
+    text-shadow: 0 0 1px #1a0049;
+    font-size: 22px;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 5px 10px;
+    box-shadow: 0 0 35px #1a004950;
+}
+
+nav ul li a:hover {
+    box-shadow: 0 0 20px #fff;
+}
+
+.home {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.info {
+    flex-basis: 50%;
+    margin-right: 260px;
+    margin-bottom: 400px;
+    text-align: center;
+}
+
+.cards {
+    margin-bottom: 150px;
+}
+
+h1 {
+    color: #000;
+    font-size: 70px;
+    text-shadow: 0 0 4px #1a0049;
+}
+
+p {
+    color: #000;
+    text-shadow: 0 0 1px #1a0049;
+    font-size: 22px;
+    line-height: 130%;
+}
+
+button {
+    width: 300px;
+    color: #000;
+    font-size: 20px;
+    text-shadow: 0 0 1px #1a0049;
+    padding: 10px 5px;
+    background-color: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    box-shadow: 0 0 15px #1a004950;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0 0 5px #fff;
+    transform: translateY(-5px);
+}
+
+.card {
+    width: 350px;
+    height: 400px;
+    display:inline-table;
+    border-radius: 30px;
+    padding: 30px 30px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    margin-right: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 15px #1a004950;
+}
+
+.card_r {
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.9)), url(img/rally_road.png);
+}
+.card_c {
+    background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.7)), url(img/rally_car.png);
+}
+.card_h {
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.9)), url(img/rally_historic.png);
+}
+.card_ct {
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.7)), url(img/rally_contact.png);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px #fff;
+}
+
+h5 {
+    color: #000;
+    text-shadow: 0 0 2px #1a0049;
+    font-size: 25px;
+}
+
+.card p {
+    text-shadow: 0 0 1,2px #1a0049;
+    font-size: 22px;
+}
+
+@media screen and (max-width: 1610px) {
+    .home {
+        display: inline-block;
+        align-items: center;
+        margin-top: 100px;
+    }
+    
+    .info {
+        margin: 0;
+        margin-bottom: 60%;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1330px) {
+    
+    .container {
+        background-position: left;
+    }
+
+    nav {
+        flex: 1;
+        text-align: center;
+    }
+    
+    nav ul li {
+        list-style: none;
+        display: inline-block;
+        margin-left: 60px;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: #1a0049;
+        text-shadow: 0 0 1px #1a0049;
+        font-size: 22px;
+        border-radius: 20px;
+        background-color: #fff;
+        padding: 5px 10px;
+        box-shadow: 0 0 35px #1a004950;
+    }
+
+    .info {
+        padding: 0 0;
+        margin-bottom: 80%;
+        margin-right: 0;
+        margin-top: 10%;
+    }
+}
