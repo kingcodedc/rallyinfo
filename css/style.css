@@ -157,7 +157,7 @@ h5 {
     nav {
         display: flex;
         justify-content: center;
-        margin-top: 150px;
+        margin-top: 40%;
     }
     
     nav ul {
@@ -185,8 +185,18 @@ h5 {
 
     .info {
         padding: 0 0;
-        margin-bottom: 80%;
+        margin-bottom: 40%;
         margin-right: 0;
         margin-top: 10%;
+    }
+
+    .info p {
+        margin-top: 140%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .info h1 {
+        margin-top: 45%;
     }
 }
