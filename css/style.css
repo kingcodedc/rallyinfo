@@ -237,9 +237,7 @@ h2 {
     }
 
     .left {
-        margin-left: auto;
-        text-align: center;
-        margin-bottom: 2%;
+        display: none;
     }
 
     .right {
