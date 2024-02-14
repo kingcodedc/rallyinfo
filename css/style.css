@@ -17,7 +17,7 @@
 }
 
 .navbar {
-    height: 20%;
+    height: 15%;
     display: flex;
     align-items: center;
 }
@@ -170,10 +170,13 @@ h2 {
         background-position: left;
     }
 
+    .navbar {
+        height: 40%;
+    }
+
     nav {
         display: flex;
         justify-content: center;
-        margin-top: 45%;
     }
     
     nav ul {
@@ -201,9 +204,9 @@ h2 {
 
     .info {
         padding: 0 0;
-        margin-bottom: 40%;
+        margin-bottom: 35%;
         margin-right: 0;
-        margin-top: 10%;
+        margin-top: 0;
     }
 
     .info p {
@@ -213,6 +216,6 @@ h2 {
     }
 
     .info h1 {
-        margin-top: 45%;
+        margin-top: 0;
     }
 }
