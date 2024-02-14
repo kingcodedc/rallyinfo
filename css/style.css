@@ -188,7 +188,7 @@ h2 {
     }
 
     .navbar {
-        height: 40%;
+        height: 75%;
     }
 
     nav {
@@ -243,6 +243,14 @@ h2 {
     .right {
         margin: auto;
         text-align: center;
+    }
+
+    .right h2 {
+        font-size: 20px;
+    }
+
+    .right p {
+        font-size: 16px;
     }
 
     .footer {
