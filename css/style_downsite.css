@@ -18,34 +18,15 @@
 .croad {
     background-image: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)), url(img/rally_road.png);
 }
-
-.contents {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .item img {
-    max-width: 50%;
-  }
-  
-  .item p {
-    max-width: 45%;
-  }
-  
-  .item:nth-child(even) img {
-    order: 2;
-  }
-  
-  .item:nth-child(even) p {
-    order: 1;
-  }
+.ccars {
+    background-image: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)), url(img/rally_car.png);
+}
+.chistoric {
+    background-image: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)), url(img/rally_historic.png);
+}
+.ccontact {
+    background-image: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)), url(img/rally_contact.png);
+}
 
 .navbar {
     height: 15%;
@@ -125,12 +106,48 @@ nav ul li a:focus {
 }
 
 .info {
-    margin: 250px;
+    margin: 50px;
+    margin-top: 300px;
     text-align: center;
 }
 
 .info p {
-    margin-top: 100px;
+    margin-top: 150px;
+}
+
+.contents {
+    display: flex;
+    flex-direction: column;
+    margin-top: 300px;
+    height: 100%;
+    margin-bottom: 280vh;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.item img {
+    height: 500px;
+    width: 50%;
+    border-radius: 25px;
+    box-shadow: 0 0 15px #1a004950;
+    object-fit: cover;
+}
+
+.item p {
+    max-width: 45%;
+}
+
+.item:nth-child(even) img {
+    order: 2;
+}
+
+.item:nth-child(even) p {
+    order: 1;
 }
 
 h1 {
