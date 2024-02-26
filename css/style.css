@@ -158,6 +158,10 @@ h2 {
     font-size: 22px;
 }
 
+.left ul li a:hover {
+    font-weight: bold;
+}
+
 .right {
     text-align: right;
     margin-right: 10%;
