@@ -7,7 +7,6 @@
 .container {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)), url(img/rally_bg.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -15,6 +14,38 @@
     padding-right: 8%;
     box-sizing: border-box;
 }
+
+.croad {
+    background-image: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)), url(img/rally_road.png);
+}
+
+.contents {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .item img {
+    max-width: 50%;
+  }
+  
+  .item p {
+    max-width: 45%;
+  }
+  
+  .item:nth-child(even) img {
+    order: 2;
+  }
+  
+  .item:nth-child(even) p {
+    order: 1;
+  }
 
 .navbar {
     height: 15%;
@@ -94,14 +125,12 @@ nav ul li a:focus {
 }
 
 .info {
-    flex-basis: 50%;
-    margin-right: 260px;
-    margin-bottom: 400px;
+    margin: 250px;
     text-align: center;
 }
 
-.cards {
-    margin-bottom: 150px;
+.info p {
+    margin-top: 100px;
 }
 
 h1 {
@@ -117,48 +146,10 @@ p {
     line-height: 130%;
 }
 
-.card {
-    width: 350px;
-    height: 400px;
-    display:inline-table;
-    border-radius: 30px;
-    padding: 30px 30px;
-    box-sizing: border-box;
-    cursor: pointer;
-    background-position: center;
-    background-size: cover;
-    margin-right: 20px;
-    margin-top: 20px;
-    box-shadow: 0 0 15px #1a004950;
-}
-
-.card_r {
-    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.9)), url(img/rally_road.png);
-}
-.card_c {
-    background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.7)), url(img/rally_car.png);
-}
-.card_h {
-    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.9)), url(img/rally_historic.png);
-}
-.card_ct {
-    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.7)), url(img/rally_contact.png);
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 20px #fff;
-}
-
 h2 {
     color: #000;
     text-shadow: 0 0 2px #1a0049;
     font-size: 25px;
-}
-
-.card p {
-    text-shadow: 0 0 1,2px #1a0049;
-    font-size: 22px;
 }
 
 .footer {
@@ -210,10 +201,6 @@ h2 {
     .info {
         margin: 0;
         margin-bottom: 70%;
-    }
-
-    .card {
-        width: 100%;
     }
 }
 
