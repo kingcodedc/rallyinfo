@@ -55,8 +55,31 @@ nav ul li a {
     border-radius: 20px;
     background-color: #fff;
     padding: 10px 20px;
-    box-shadow: 0 0 35px #1a004950;
+    box-shadow: 0 0 20px #1a004950;
     transition: all 0.3s ease;
+}
+
+nav ul li a.active {
+    animation: rainbow 5s infinite;
+    font-weight: bold;
+}
+
+@keyframes rainbow {
+0% {
+    box-shadow: 0 0 20px #000;
+}
+25% {
+    box-shadow: 0 0 20px #646464;
+}
+50% {
+    box-shadow: 0 0 20px #fff;
+}
+75% {
+    box-shadow: 0 0 20px #646464;
+}
+100% {
+    box-shadow: 0 0 20px #000;
+}
 }
 
 nav ul li a:hover,
@@ -166,7 +189,8 @@ h2 {
     font-size: 22px;
 }
 
-.left ul li a:hover {
+.left ul li a:hover,
+.left ul li a.active {
     font-weight: bold;
 }
 
