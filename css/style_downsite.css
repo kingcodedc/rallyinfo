@@ -200,6 +200,7 @@ h2 {
 .left ul li a:hover,
 .left ul li a.active {
     font-weight: bold;
+    text-shadow: 0 0 3px #1a0049;
 }
 
 .right {
