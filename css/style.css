@@ -137,16 +137,16 @@ p {
 }
 
 .card_r {
-    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.9)), url(img/rally_road.png);
+    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.9)), url(img/rally_road.png);
 }
 .card_c {
-    background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.7)), url(img/rally_car.png);
+    background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.9)), url(img/rally_car.png);
 }
 .card_h {
-    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.9)), url(img/rally_historic.png);
+    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.9)), url(img/rally_historic.png);
 }
 .card_ct {
-    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.7)), url(img/rally_contact.png);
+    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.9)), url(img/rally_contact.png);
 }
 
 .card:hover {
