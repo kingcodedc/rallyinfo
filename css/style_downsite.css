@@ -231,7 +231,7 @@ h2 {
     }
 
     .item p {
-        max-width: 100%; /* Make text full width */
+        max-width: 100%;
     }
 }
 
