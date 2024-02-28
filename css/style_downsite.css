@@ -219,6 +219,20 @@ h2 {
         margin: 0;
         margin-top: 350px;
     }
+
+    .item {
+        flex-direction: column-reverse;
+    }
+
+    .item img {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .item p {
+        max-width: 100%; /* Make text full width */
+    }
 }
 
 @media screen and (max-width: 1330px) {
