@@ -118,8 +118,8 @@ nav ul li a:focus {
 .contents {
     display: flex;
     flex-direction: column;
-    margin-top: 280px;
-    height: 120%;
+    margin-top: 20px;
+    height: 150%;
 }
 
 .item {
