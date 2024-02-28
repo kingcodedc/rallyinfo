@@ -119,7 +119,7 @@ nav ul li a:focus {
     display: flex;
     flex-direction: column;
     margin-top: 25%;
-    margin-bottom: 20%;
+    margin-bottom: 200px;
     height: 500vh;
 }
 
