@@ -16,16 +16,16 @@
 }
 
 .croad {
-    background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.9)), url(img/rally_road.png);
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.9)), url(img/rally_road.png);
 }
 .ccars {
-    background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.9)), url(img/rally_car.png);
+    background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.9)), url(img/rally_car.png);
 }
 .chistoric {
-    background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.9)), url(img/rally_historic.png);
+    background-image: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.9)), url(img/rally_historic.png);
 }
 .ccontact {
-    background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.9)), url(img/rally_contact.png);
+    background-image: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.9)), url(img/rally_contact.png);
 }
 
 .navbar {
