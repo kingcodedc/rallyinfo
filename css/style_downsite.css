@@ -233,6 +233,14 @@ h2 {
     .item p {
         max-width: 100%;
     }
+
+    .item:nth-child(even) img {
+        order: 1;
+    }
+    
+    .item:nth-child(even) p {
+        order: 2;
+    }
 }
 
 @media screen and (max-width: 1330px) {
