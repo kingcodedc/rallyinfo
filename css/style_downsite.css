@@ -122,6 +122,10 @@ nav ul li a:focus {
     margin-bottom: 20%;
 }
 
+.historic {
+    filter: grayscale(100%);
+}
+
 .item {
     display: flex;
     justify-content: space-between;
