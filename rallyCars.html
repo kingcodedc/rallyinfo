@@ -1,72 +1,110 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- Määritetään dokumentin merkistökoodaus -->
         <meta charset="utf-8">
+        <!-- Määritetään näkymän skaalaus -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!--Otsikko nettisivuille, joka näkyy ylhäällä-->
+        <!-- Sivuston otsikko -->
         <title>Rally info</title>
 
-        <!-- Määritetään tyylitiedoston polku -->
+        <!-- Linkitys ulkoisiin tyylitiedostoihin -->
         <link rel="stylesheet" href="css/style_downsite.css">
+        <!-- Linkitys Google-fonttiin Comfortaa -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
     </head>
 
     <body>
-        <div class="container ccars" aria-label="Background image, where is ford rally car driving on soft dirt.">
+        <!-- Pääsisältökontaineri -->
+        <div class="container ccars" aria-label="Background image, where a Ford rally car drives on soft sand.">
+            <!-- Navigaatiopalkki -->
             <div class="navbar">
+                <!-- Sivuston logo ja linkki etusivulle -->
                 <a href="index.html"><img alt="Logo, where is rally car" src="css/img/logo.png" class="logo"></a>
+                <!-- Navigaatiolinkit -->
                 <nav>
                     <ul>
+                        <!-- Etusivun linkki -->
                         <li><a href="index.html">Home</a></li>
+                        <!-- Rallitiesivun linkki -->
                         <li><a href="rallyRoads.html">Rally Roads</a></li>
+                        <!-- Ralliautosivun linkki (aktiivinen sivu) -->
                         <li><a href="rallyCars.html" class="active">Rally Cars</a></li>
+                        <!-- Historiasivun rallien linkki -->
                         <li><a href="historic.html">Historic</a></li>
+                        <!-- Yhteystietosivun linkki -->
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
             </div>
+            <!-- Kotisivun pääsisältö -->
             <div class="home">
+                <!-- Infolaatikko -->
                 <div class="info">
+                    <!-- Otsikko -->
                     <h1>Rally cars</h1>
-                    <p>Rally cars are versatile and designed for various terrain conditions and types of competitions. One of the most well-known is the WRC (World Rally Championship) class car, which is designed to compete in diverse terrains around the world. These cars are typically four-wheel drive with powerful engines and advanced suspension systems. Another example would be rallycross cars, designed for speed and agility, emphasizing acceleration and maneuverability on short track segments. Additionally, there are historical rally cars resembling old racing models, often used in demonstration runs and special competitions!</p>
+                    <!-- Teksti -->
+                    <p>Rally cars are versatile and designed for various terrains and types of competition. One of the most well-known is the WRC-class car, which is designed to compete in diverse terrains around the world. These cars are typically all-wheel-drive with powerful engines and advanced suspensions. Another example is rallycross cars, which are designed to emphasize speed and agility on short track circuits. Additionally, there are historic rally cars that resemble old racing cars and are often used in demonstration runs and special competitions!</p>
                 </div>
             </div>
+            <!-- Sisältölaatikot -->
             <div class="contents">
+                <!-- Sisältölaatikko: WRC-auto -->
                 <div class="item">
-                    <img alt="Image, where is WRC rally car" src="css/img/rally_wrc.png" class="contentsImg">
-                    <p><b>WRC (World Rally Championship)</b> used in the WRC series, the highest level of rally racing. Typically four-wheel-drive and powerful cars, such as Toyota Gazoo Racing Yaris WRC, Hyundai i20 Coupe WRC, and Ford Puma WRC. Powerful engines, lightweight chassis, and advanced aerodynamics. Performance-enhancing technologies like active differentials and adjustable suspension systems.</p>
+                    <!-- Kuva WRC-autosta -->
+                    <img alt="Image of a WRC rally car" src="css/img/rally_wrc.png" class="contentsImg">
+                    <!-- Teksti -->
+                    <p><b>WRC (World Rally Championship)</b> - used in the WRC series, the pinnacle of rally racing. Typically all-wheel-drive and powerful cars, such as the Toyota Gazoo Racing Yaris WRC, Hyundai i20 Coupe WRC, and Ford Puma WRC. Powerful engines, lightweight chassis, and advanced aerodynamic features. Performance-enhancing technologies like active differentials and adjustable suspension systems.</p>
                 </div>
+                <!-- Sisältölaatikko: WRC2-auto -->
                 <div class="item">
-                    <img alt="Image, where is WRC2 rally car" src="css/img/rally_wrc2.png" class="contentsImg">
-                    <p><b>Group R5</b> used in the WRC2 series and many national rally championships. Four-wheel-drive cars based on production models, such as Ford Fiesta R5, Škoda Fabia R5, and Citroën C3 R5. Powerful but more economical engines compared to WRC cars. Limited aerodynamics and electronics but still competitive performance.</p>
+                    <!-- Kuva WRC2-ralliautosta -->
+                    <img alt="Image of a WRC2 rally car" src="css/img/rally_wrc2.png" class="contentsImg">
+                    <!-- Teksti -->
+                    <p><b>Group R5</b> - used in the WRC2 series and many national rally championships. All-wheel-drive cars based on production models, such as the Ford Fiesta R5, Škoda Fabia R5, and Citroën C3 R5. More powerful yet economical engines compared to WRC cars. Limited aerodynamics and electronics, but still competitive performance.</p>
                 </div>
+                <!-- Sisältölaatikko: Group B -auto -->
                 <div class="item">
-                    <img alt="Image, where is group b rally car" src="css/img/rally_b.png" class="contentsImg">
-                    <p><b>Group B</b> historical rally group that was used in the 1980s.
-                        Known for extreme performance and technical advancements. Legendary cars like Audi Quattro, Lancia Delta S4, and Ford RS200. High power-to-weight ratio making them extremely dangerous, leading to the group being banned for safety reasons.</p>
+                    <!-- Kuva Group B -ralliautosta -->
+                    <img alt="Image of a Group B rally car" src="css/img/rally_b.png" class="contentsImg">
+                    <!-- Teksti -->
+                    <p><b>Group B</b> - historical rally category used in the 1980s. Known for extreme performance and technical advancements. Legendary cars such as the Audi Quattro, Lancia Delta S4, and Ford RS200. High power-to-weight ratio made them extremely dangerous, leading to the group's banning due to safety reasons.</p>
                 </div>
+                <!-- Sisältölaatikko: Group N -auto -->
                 <div class="item">
-                    <img alt="Image, where is group n rally car" src="css/img/rally_n.png" class="contentsImg">
-                    <p><b>Group N</b> rally group based on production cars.
-                        Used in several national and regional rally championships. Limited technology compared to WRC and R5 cars but still competitive and more budget-friendly. Examples include Mitsubishi Lancer Evolution and Subaru Impreza WRX STI.</p>
+                    <!-- Kuva Group N -ralliautosta -->
+                    <img alt="Image of a Group N rally car" src="css/img/rally_n.png" class="contentsImg">
+                    <!-- Teksti -->
+                    <p><b>Group N</b> - rally category based on production cars. Used in various national and regional rally championships. Limited technology compared to WRC and R5 cars, but still competitive and budget-friendly. Examples include the Mitsubishi Lancer Evolution and Subaru Impreza WRX STI.</p>
                 </div>
+                <!-- Sisältölaatikko: Rally Super 2000 -auto -->
                 <div class="item">
-                    <img alt="Image, where is rally super 200 series rally car" src="css/img/rally_2000.png" class="contentsImg">
-                    <p><b>Rally Super 2000 (S2000)</b> former rally group used in the WRC2 class before the introduction of R5 cars. Four-wheel-drive cars based on production models offering competitive performance. Examples include Škoda Fabia S2000, Peugeot 207 S2000, and Ford Fiesta S2000.</p>
+                    <!-- Kuva Rally Super 2000 -sarjan ralliautosta -->
+                    <img alt="Image of a Rally Super 2000 rally car" src="css/img/rally_2000.png" class="contentsImg">
+                    <!-- Teksti -->
+                    <p><b>Rally Super 2000 (S2000)</b> - former rally category used in the WRC2 class before the introduction of R5 cars. All-wheel-drive cars based on production models offering competitive performance. Examples include the Škoda Fabia S2000, Peugeot 207 S2000, and Ford Fiesta S2000.</p>
                 </div>
+                <!-- Sisältölaatikko: Rally Kit Car -->
                 <div class="item">
-                    <img alt="Image, where is rally kit car" src="css/img/rally_kit.png" class="contentsImg">
-                    <p><b>Rally Kit Car</b> rally group popular in the 1990s.
-                        Based on smaller and lighter cars with more powerful engines but limited aerodynamics and technology. Examples include Citroën Saxo Kit Car, Peugeot 306 Maxi, and Renault Clio Kit Car.</p>
+                    <!-- Kuva Rally Kit Car -ralliautosta -->
+                    <img alt="Image of a Rally Kit Car" src="css/img/rally_kit.png" class="contentsImg">
+                    <!-- Teksti -->
+                    <p><b>Rally Kit Car</b> - rally category popular in the 1990s. Based on smaller and lighter cars with more powerful engines but limited aerodynamic and technological features. Examples include the Citroën Saxo Kit Car, Peugeot 306 Maxi, and Renault Clio Kit Car.</p>
                 </div>
+                <!-- Sisältölaatikko: Historialliset ralliautot -->
                 <div class="item">
-                    <img alt="Image, where is historic rally car" src="css/img/rally_h.png" class="contentsImg">
-                    <p><b>Historic Rally Cars</b> rally cars originating from historical periods like the 1960s and 1970s. Often rear-wheel-drive and less powerful than modern rally cars. Famous models include Ford Escort MKII, Lancia Stratos, and Porsche 911.</p>
+                    <!-- Kuva historiallisesta ralliautosta -->
+                    <img alt="Image of a historic rally car" src="css/img/rally_h.png" class="contentsImg">
+                    <!-- Teksti -->
+                    <p><b>Historic Rally Cars</b> - rally cars originating from historical periods, such as the 1960s and 1970s. Often rear-wheel-drive and less powerful than modern rally cars. Famous models include the Ford Escort MKII, Lancia Stratos, and Porsche 911.</p>
                 </div>
             </div>
+            <!-- Alatunniste -->
             <footer class="footer">
+                <!-- Vasen osio alatunnisteessa -->
                 <div class="left">
                     <ul>
+                        <!-- Linkit sivuston eri osioihin -->
                         <li><a href="index.html">Home</a></li>
                         <li><a href="rallyRoads.html">Rally Roads</a></li>
                         <li><a href="rallyCars.html" class="active">Rally Cars</a></li>
@@ -74,7 +112,9 @@
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
+                <!-- Oikea osio alatunnisteessa -->
                 <div class="right">
+                    <!-- Yhteystietoja -->
                     <h2>Contact Us</h2>
                     <p>Email: info@rallyinfo.net<br>Phone: +358 000 000 000</p>
                 </div>

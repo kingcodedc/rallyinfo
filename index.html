@@ -1,65 +1,94 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- Määritetään dokumentin merkistökoodaus ja näkymän skaalaus -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!--Otsikko nettisivuille, joka näkyy ylhäällä-->
+        <!-- Sivuston otsikko, joka näkyy selaimen välilehdellä -->
         <title>Rally info</title>
 
-        <!-- Määritetään tyylitiedoston polku -->
+        <!-- Linkitetään ulkoinen tyylitiedosto ja Google-fontti -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
     </head>
 
     <body>
-        <div class="container" aria-label="Background image, where is bmw rally car driving on dirt.">
+        <!-- Pääsisältöcontainer -->
+        <div class="container" aria-label="Background image, where a rally car drives on dirt.">
+            <!-- Navigaatiopalkki -->
             <div class="navbar">
+                <!-- Linkitetty logo, joka toimii sivun nimenä ja palauttaa pääsivulle -->
                 <a href="index.html"><img alt="Logo, where is rally car" src="css/img/logo.png" class="logo"></a>
+                <!-- Navigointivalikko, jossa on linkit eri sivuille -->
                 <nav>
                     <ul>
+                        <!-- Etusivun linkki (aktiivinen) -->
                         <li><a href="index.html" class="active">Home</a></li>
+                        <!-- Rallitie sivun linkki -->
                         <li><a href="rallyRoads.html">Rally Roads</a></li>
+                        <!-- Ralliautosivun linkki -->
                         <li><a href="rallyCars.html">Rally Cars</a></li>
+                        <!-- Historiasivun linkki -->
                         <li><a href="historic.html">Historic</a></li>
+                        <!-- Yhteystietosivun linkki -->
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
             </div>
+            <!-- Kotisivun pääsisältö -->
             <div class="home">
+                <!-- Tietolaatikko sivuston esittelytekstillä -->
                 <div class="info">
+                    <!-- Sivuston otsikko -->
                     <h1>Rally info</h1>
+                    <!-- Sivuston esittelyteksti -->
                     <p>Welcome to Rally Info - the service that provides comprehensive information about rally routes, cars, and the history of the sport! We cover legendary routes such as Monte Carlo and the snowy trails of Sweden, offering in-depth insights into both modern WRC cars and classic rally legends. Join us and experience rally like never before!</p>
                 </div>
+                <!-- Kortit eri aihealueille, jokaisessa kuva ja linkki -->
                 <div class="cards">
-                    <div class="card card_r" aria-label="image on rally road where is so much dirt on road.">
+                    <!-- Rallitie kortti -->
+                    <div class="card card_r" aria-label="A picture of a dusty road in the rally.">
                         <a href="rallyRoads.html">
+                        <!-- Rallitie kortin otsikko -->
                         <h2>Rally roads</h2>
+                        <!-- Rallitie kortin kuvaus -->
                         <p>Rally races traverse diverse terrains like forests, mountains, and gravel roads, with drivers tackling stages at top speed. Varied road surfaces and weather conditions intensify the challenge. Click for more info on rally roads!</p>
                         </a>
                     </div>
-                    <div class="card card_c" aria-label="image on rally car what drift on dirt.">
+                    <!-- Ralliauto kortti -->
+                    <div class="card card_c" aria-label="A picture of a rally car drifting on sand.">
                         <a href="rallyCars.html">
+                        <!-- Ralliauto kortin otsikko -->
                         <h2>Rally cars</h2>
+                        <!-- Ralliauto kortin kuvaus -->
                         <p>Rally cars vary in design and performance to tackle different terrains. They're built for speed and durability, with specialized features for each race. Click for more info on rally cars!</p>
                         </a>
                     </div>
-                    <div class="card card_h" aria-label="historic rally car driving on dirt.">
+                    <!-- Historia kortti -->
+                    <div class="card card_h" aria-label="A picture of a historic rally car driving on sand.">
                         <a href="historic.html">
+                        <!-- Historia kortin otsikko -->
                         <h2>Historic</h2>
+                        <!-- Historia kortin kuvaus -->
                         <p>Rallying began in the early 20th century. The establishment of the World Rally Championship in 1973 marked a milestone. Legendary drivers and iconic moments have made rallying a beloved motorsport. Click for more historic info!</p>
                         </a>
                     </div>
-                    <div class="card card_ct" aria-label="drift car drifting on asphalt road.">
+                    <!-- Yhteystieto kortti -->
+                    <div class="card card_ct" aria-label="A picture of a drift car drifting on an asphalt road.">
                         <a href="contact.html">
+                        <!-- Yhteystieto kortin otsikko -->
                         <h2>Contact</h2>
+                        <!-- Yhteystieto kortin kuvaus -->
                         <p>Rally Info provides comprehensive information about rallying, including routes, cars, and the history of the sport. It offers information about the sport and its development! Click to read more about us!</p>
                         </a>
                     </div>
                 </div>
             </div>
+            <!-- Alatunniste, jossa on linkit ja yhteystiedot -->
             <footer class="footer">
                 <div class="left">
                     <ul>
+                        <!-- Navigointilinkit -->
                         <li><a href="index.html" class="active">Home</a></li>
                         <li><a href="rallyRoads.html">Rally Roads</a></li>
                         <li><a href="rallyCars.html">Rally Cars</a></li>
@@ -68,7 +97,9 @@
                     </ul>
                 </div>
                 <div class="right">
+                    <!-- Yhteystiedot -->
                     <h2>Contact Us</h2>
+                    <!-- Yhteystietojen kuvaus -->
                     <p>Email: info@rallyinfo.net<br>Phone: +358 000 000 000</p>
                 </div>
             </footer>

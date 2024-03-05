@@ -1,72 +1,98 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- Asetetaan merkistökoodaus ja näkymän skaalaus -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!--Otsikko nettisivuille, joka näkyy ylhäällä-->
+        <!-- Sivun otsikko, näkyy selaimen välilehdellä -->
         <title>Rally info</title>
 
-        <!-- Määritetään tyylitiedoston polku -->
+        <!-- Linkitetään ulkoinen tyylitiedosto ja Google-fontti -->
         <link rel="stylesheet" href="css/style_downsite.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
     </head>
 
     <body>
-        <div class="container chistoric" aria-label="Background image, where is bmw rally car driving on dirt.">
+        <!-- Pääsisältöcontainer -->
+        <div class="container chistoric" aria-label="Background image, where a historic rally car drives on dirt.">
+            <!-- Navigaatiopalkki -->
             <div class="navbar">
+                <!-- Linkitetty logo, joka toimii sivun nimenä ja palauttaa pääsivulle -->
                 <a href="index.html"><img alt="Logo, where is rally car" src="css/img/logo.png" class="logo"></a>
+                <!-- Navigointivalikko, jossa on linkit eri sivuille -->
                 <nav>
                     <ul>
+                        <!-- Etusivun linkki -->
                         <li><a href="index.html">Home</a></li>
+                        <!-- Rallitiesivun linkki -->
                         <li><a href="rallyRoads.html">Rally Roads</a></li>
+                        <!-- Ralliautosivun linkki -->
                         <li><a href="rallyCars.html">Rally Cars</a></li>
+                        <!-- Historiasivun linkki (aktiivinen sivu) -->
                         <li><a href="historic.html" class="active">Historic</a></li>
+                        <!-- Yhteystietosivun linkki -->
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
             </div>
+            <!-- Kotisivun pääsisältö -->
             <div class="home">
+                <!-- Infolaatikko -->
                 <div class="info">
+                    <!-- Otsikko -->
                     <h1>Historic</h1>
-                    <p>Rallying emerged in the late 19th century with the development of automobiles. The first official rally was held in 1894 in France. Rally competitions gained popularity in the early 20th century, particularly in Europe. In 1973, the World Rally Championship (WRC) was established, which is the pinnacle of the sport today. Renowned rally drivers like Juha Kankkunen, Sébastien Loeb, and Tommi Mäkinen have become legends. Historic rallies include the Monte Carlo Rally, and iconic cars like the Lancia Delta Integrale are celebrated. Modern rallying utilizes advanced technology and remains one of the most popular motorsports globally!</p>
+                    <!-- Teksti -->
+                    <p>Rallying began to evolve in the late 19th century with the rise of automobiles. The first official rally was held in France in 1894. Rallying started gaining popularity in the early 20th century, particularly in Europe. In 1973, the top tier of rallying, the World Rally Championship (WRC), was established. Renowned rally drivers like Juha Kankkunen, Sébastien Loeb, and Tommi Mäkinen have become legends. Historic rallies include events like the Monte Carlo Rally, and iconic cars like the Lancia Delta Integrale are celebrated. Modern rallying utilizes advanced technology and stands as one of the most popular motorsports in the world!</p>
                 </div>
             </div>
+            <!-- Sivuston sisältö -->
             <div class="contents">
+                <!-- Yksittäiset sisältöelementit -->
                 <div class="item">
-                    <img alt="Image Paris-Rouen rally" src="css/img/rally_paris.png" class="contentsImg historic">
-                    <p><b>Paris-Rouen Rally (1894)</b> the first official rally held in France, marking the inception of organized rallying. Though only a few cars participated, it laid the groundwork for the sport.</p>
+                    <!-- Kuva ja teksti -->
+                    <img alt="Image of Paris-Rouen rally" src="css/img/rally_paris.png" class="contentsImg historic">
+                    <p><b>Paris-Rouen Rally (1894)</b> - The first official rally in France, a milestone in organized rallying. Despite only a few cars participating, it laid the foundation for the sport.</p>
                 </div>
                 <div class="item">
-                    <img alt="Image Monte Carlo rally" src="css/img/rally_monte.png" class="contentsImg historic">
-                    <p><b>Monte Carlo Rally (1911)</b>  one of the most prestigious events in rallying history, starting in 1911. It holds a significant place in rallying folklore, with numerous legendary tales associated with it.</p>
+                    <!-- Kuva ja teksti -->
+                    <img alt="Image of Monte Carlo rally" src="css/img/rally_monte.png" class="contentsImg historic">
+                    <p><b>Monte Carlo Rally (1911)</b> - One of the most prestigious events in rallying, dating back to 1911. It holds significant importance in rallying history, with numerous legendary tales associated with it.</p>
                 </div>
                 <div class="item">
-                    <img alt="FIA logo in truck trailer" src="css/img/rally_fia.png" class="contentsImg historic">
-                    <p><b>Foundation of FIA (1904)</b> the Fédération Internationale de l'Automobile (FIA) was established in 1904 to oversee and regulate automobile-related activities, including motorsports. FIA has played a pivotal role in the development and governance of rallying.</p>
+                    <!-- Kuva ja teksti -->
+                    <img alt="FIA's logo on a truck" src="css/img/rally_fia.png" class="contentsImg historic">
+                    <p><b>Establishment of FIA (1904)</b> - The Fédération Internationale de l'Automobile (FIA) was founded in 1904 to oversee and regulate activities related to automobiles, including motorsport. The FIA has played a pivotal role in the development and governance of rallying.</p>
                 </div>
                 <div class="item">
-                    <img alt="Image wrc car" src="css/img/rally_wrc.png" class="contentsImg historic">
-                    <p><b>Establishment of WRC (1973)</b> the World Rally Championship (WRC) was founded in 1973, replacing earlier unofficial rally championships. WRC has been the premier championship series in rallying, showcasing the best drivers and teams.</p>
+                    <!-- Kuva ja teksti -->
+                    <img alt="Image of WRC car" src="css/img/rally_wrc.png" class="contentsImg historic">
+                    <p><b>Formation of WRC (1973)</b> - The World Rally Championship (WRC) was established in 1973 to replace previous unofficial rallying championships. WRC has been the premier rally series, showcasing the best drivers and teams.</p>
                 </div>
                 <div class="item">
-                    <img alt="Gruop b rally car" src="css/img/rally_b.png" class="contentsImg historic">
-                    <p><b>Group B Era (1980s)</b> the 1980s saw the Group B category, characterized by extremely powerful and dangerous cars. The era came to an end due to tragic accidents, leading to the discontinuation of Group B.</p>
+                    <!-- Kuva ja teksti -->
+                    <img alt="Group B rally car" src="css/img/rally_b.png" class="contentsImg historic">
+                    <p><b>Era of Group B (1980s)</b> - The 1980s witnessed the Group B era, characterized by extremely powerful and dangerous cars. The era came to an end due to tragic accidents, leading to the discontinuation of Group B.</p>
                 </div>
                 <div class="item">
-                    <img alt="Historic development" src="css/img/rally_dev.png" class="contentsImg historic">
-                    <p><b>Development of Four-wheel Drive (1980s)</b> advancements in four-wheel-drive technology revolutionized rallying, enhancing traction and control in challenging conditions. This technological leap contributed to modern rallying's competitiveness.</p>
+                    <!-- Kuva ja teksti -->
+                    <img alt="Historical development" src="css/img/rally_dev.png" class="contentsImg historic">
+                    <p><b>Development of four-wheel drive (1980s)</b> - The advancement of four-wheel drive technology revolutionized rallying, enhancing traction and control in challenging conditions. This technological leap forward boosted the competitiveness of modern rallying.</p>
                 </div>
                 <div class="item">
-                    <img alt="Dominant domino" src="css/img/rally_dominant.png" class="contentsImg historic">
-                    <p><b>Dominant Periods</b> various drivers and teams have dominated rallying at different times. For instance, Sebastien Loeb and Citroën dominated the early 2000s, while Sebastien Ogier and Volkswagen enjoyed success in later years.</p>
+                    <!-- Kuva ja teksti -->
+                    <img alt="Periods of dominance" src="css/img/rally_dominant.png" class="contentsImg historic">
+                    <p><b>Periods of dominance</b> - Various drivers and teams have dominated rallying at different times. For example, Sébastien Loeb and Citroën dominated the early 2000s, while Sébastien Ogier and Volkswagen succeeded later on.</p>
                 </div>
                 <div class="item">
-                    <img alt="Toyota hybrid motor" src="css/img/rally_tec.png" class="contentsImg historic">
-                    <p><b>Technological Advancements</b> continuous technological advancements have reshaped rallying, including improvements in engine technology, chassis development, and aerodynamics. These innovations have made rally cars faster and safer.</p>
+                    <!-- Kuva ja teksti -->
+                    <img alt="Toyota's hybrid engine" src="css/img/rally_tec.png" class="contentsImg historic">
+                    <p><b>Technological advancements</b> - Continuous technological progress has shaped rallying, including improvements in engine technology, chassis development, and aerodynamic enhancements. These innovations have made rally cars faster and safer.</p>
                 </div>
             </div>
+            <!-- Alatunniste, jossa on linkit ja yhteystiedot -->
             <footer class="footer">
                 <div class="left">
+                    <!-- Navigointilinkit -->
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="rallyRoads.html">Rally Roads</a></li>
@@ -76,6 +102,7 @@
                     </ul>
                 </div>
                 <div class="right">
+                    <!-- Yhteystiedot -->
                     <h2>Contact Us</h2>
                     <p>Email: info@rallyinfo.net<br>Phone: +358 000 000 000</p>
                 </div>
