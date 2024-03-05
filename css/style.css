@@ -326,4 +326,29 @@ h2 {
         max-width: 100%; /* Maksimi leveys */
         margin-bottom: 60px; /* Alamarginaali */
     }
+
+    .left {
+        display: none; /* Piilotetaan vasen osa */
+    }
+
+    .right {
+        margin: auto; /* Marginaalit automaattisesti */
+        text-align: center; /* Teksti keskelle */
+    }
+
+    .right h2 {
+        font-size: 20px; /* Fontin koko */
+    }
+
+    .right p {
+        font-size: 16px; /* Fontin koko */
+    }
+
+    .footer {
+        background-color: #f0f0f0; /* Taustaväri */
+        display: inline-block; /* Asetetaan elementit riviin */
+        align-items: center; /* Asetetaan elementit pystysuunnassa keskelle */
+        position: fixed; /* Kiinteä sijainti */
+        height: 20%; /* Korkeus */
+    }
 }
