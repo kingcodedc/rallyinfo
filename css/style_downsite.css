@@ -1,79 +1,91 @@
+/* Asetetaan nollaksi marginaalit ja täyttötila kaikille elementeille */
 * {
     margin: 0;
     padding: 0;
-    font-family: Comfortaa, sans-serif;
+    font-family: Comfortaa, sans-serif; /* Mukavat kirjasintyypit */
 }
 
+/* Containerin tyylit */
 .container {
     width: 100%;
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-left: 8%;
-    padding-right: 8%;
-    box-sizing: border-box;
+    height: 100vh; /* Vie koko näytön korkeuden */
+    background-position: center; /* Taustakuvan sijainti keskellä */
+    background-size: cover; /* Taustakuva täyttää koko elementin */
+    background-repeat: no-repeat; /* Estetään taustakuvan toisto */
+    padding-left: 8%; /* Vasen täyttötila */
+    padding-right: 8%; /* Oikea täyttötila */
+    box-sizing: border-box; /* Laatikon koko sisältäen reunat ja täytön */
 }
 
+/* Erillinen container rallitien taustakuvalla */
 .croad {
     background-image: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,1)), url(img/rally_road.png);
 }
+
+/* Erillinen container ralliauton taustakuvalla */
 .ccars {
     background-image: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,1)), url(img/rally_car.png);
 }
+
+/* Erillinen container historiallisen ralliauton taustakuvalla */
 .chistoric {
     background-image: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,1)), url(img/rally_historic.png);
 }
+
+/* Erillinen container yhteystiedot taustakuvalla */
 .ccontact {
     background-image: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,1)), url(img/rally_contact.png);
 }
 
+/* Navigaatiopalkin tyylit */
 .navbar {
-    height: 15%;
-    display: flex;
-    align-items: center;
+    height: 15%; /* Määritellään palkin korkeus */
+    display: flex; /* Asetetaan elementit joustaviksi */
+    align-items: center; /* Asetetaan elementit pystysuunnassa keskelle */
 }
 
+/* Logo */
 .logo {
-    width: 80px;
-    height: 80px;
-    cursor: pointer;
-    background-size: cover;
-    border-radius: 50% 90% 50% 90%;
-    box-shadow: 0 0 15px #fff;
+    width: 80px; /* Leveys */
+    height: 80px; /* Korkeus */
+    cursor: pointer; /* Osoitin muuttuu kärsäksi */
+    background-size: cover; /* Taustakuva täyttää koko elementin */
+    border-radius: 50% 90% 50% 90%; /* Pyöristetty reuna */
+    box-shadow: 0 0 15px #fff; /* Reunusvarjostus */
 }
 
+/* Navigointivalikon tyylit */
 nav {
-    flex: 1;
-    text-align: center;
+    flex: 1; /* Vie joustavan tilan */
+    text-align: center; /* Teksti keskelle */
 }
 
 nav ul {
-    padding: 0;
-    margin: 0;
+    padding: 0; /* Asetetaan sisäinen täyttötila nollaksi */
+    margin: 0; /* Asetetaan marginaali nollaksi */
 }
 
 nav ul li {
-    list-style: none;
-    display: inline-block;
-    margin-left: 60px;
+    list-style: none; /* Poistetaan luettelomerkki */
+    display: inline-block; /* Elementit peräkkäin */
+    margin-left: 60px; /* Vasen marginaali */
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #000;
-    text-shadow: 0 0 1px #1a0049;
-    font-size: 22px;
-    border-radius: 25px;
-    background-color: #fff;
-    padding: 10px 20px;
-    box-shadow: 0 0 20px #1a004950;
-    transition: all 0.3s ease;
+    text-decoration: none; /* Poistetaan linkin korostus */
+    color: #000; /* Tekstin väri */
+    text-shadow: 0 0 1px #1a0049; /* Tekstin varjostus */
+    font-size: 22px; /* Fontin koko */
+    border-radius: 25px; /* Reunojen pyöristys */
+    background-color: #fff; /* Taustaväri */
+    padding: 10px 20px; /* Sisätila */
+    box-shadow: 0 0 20px #1a004950; /* Reunusvarjostus */
+    transition: all 0.3s ease; /* Sulavat animaatiot */
 }
 
 nav ul li a.active {
-    animation: rainbow 5s infinite;
-    font-weight: bold;
+    animation: rainbow 5s infinite; /* Aktiivisen linkin animaatio */
+    font-weight: bold; /* Lihavoitu teksti */
 }
 
 @keyframes rainbow {
@@ -94,239 +106,246 @@ nav ul li a.active {
 }
 }
 
-nav ul li a:hover,
-nav ul li a:focus {
-    box-shadow: 0 0 20px #fff;
-    font-weight: bold;
-}
-
+/* Kotisivun pääsisältö */
 .home {
-    display: flex;
-    align-items: center;
+    display: flex; /* Asetetaan elementit riviin */
+    align-items: center; /* Asetetaan elementit pystysuunnassa keskelle */
 }
 
+/* Tietolaatikko */
 .info {
-    margin: 50px;
-    margin-top: 40%;
-    text-align: center;
+    margin: 50px; /* Ulkoinen marginaali */
+    margin-top: 40%; /* Ylämarginaali */
+    text-align: center; /* Teksti keskelle */
 }
 
 .info p {
-    margin-top: 145px;
+    margin-top: 145px; /* Ylämarginaali */
 }
 
+/* Sisältöalueet */
 .contents {
-    display: flex;
-    flex-direction: column;
-    margin-top: 15%;
-    margin-bottom: 20%;
+    display: flex; /* Asetetaan elementit riviin */
+    flex-direction: column; /* Asetetaan elementit sarakkeiksi */
+    margin-top: 15%; /* Ylämarginaali */
+    margin-bottom: 20%; /* Alamarginaali */
 }
 
-.historic {
-    filter: grayscale(100%);
-}
-
+/* Yhteystietoja esittävät osiot */
 .item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
+    display: flex; /* Asetetaan elementit riviin */
+    justify-content: space-between; /* Tasataan elementit välille */
+    align-items: center; /* Asetetaan elementit pystysuunnassa keskelle */
+    margin-bottom: 20px; /* Alamarginaali */
 }
 
 .item img {
-    height: 450px;
-    width: 45%;
-    border-radius: 25px;
-    box-shadow: 0 0 15px #1a004950;
-    object-fit: cover;
+    height: 450px; /* Kuva korkeus */
+    width: 45%; /* Kuva leveys */
+    border-radius: 25px; /* Reunojen pyöristys */
+    box-shadow: 0 0 15px #1a004950; /* Reunusvarjostus */
+    object-fit: cover; /* Kuva täyttää elementin säilyttäen mittasuhteet */
 }
 
 .item p {
-    max-width: 45%;
+    max-width: 45%; /* Maksimi leveys */
 }
 
 .item:nth-child(even) img {
-    order: 2;
+    order: 2; /* Kuvan järjestys */
 }
 
 .item:nth-child(even) p {
-    order: 1;
+    order: 1; /* Tekstin järjestys */
 }
 
+/* Yleinen tekstityyli */
 h1 {
-    color: #000;
-    font-size: 70px;
-    text-shadow: 0 0 4px #1a0049;
+    color: #000; /* Tekstin väri */
+    font-size: 70px; /* Fontin koko */
+    text-shadow: 0 0 4px #1a0049; /* Tekstin varjostus */
 }
 
 p {
-    color: #000;
-    text-shadow: 0 0 1px #1a0049;
-    font-size: 22px;
-    line-height: 130%;
+    color: #000; /* Tekstin väri */
+    text-shadow: 0 0 1px #1a0049; /* Tekstin varjostus */
+    font-size: 22px; /* Fontin koko */
+    line-height: 130%; /* Riviväli */
 }
 
 h2 {
-    color: #000;
-    text-shadow: 0 0 2px #1a0049;
-    font-size: 25px;
+    color: #000; /* Tekstin väri */
+    text-shadow: 0 0 2px #1a0049; /* Tekstin varjostus */
+    font-size: 25px; /* Fontin koko */
 }
 
+/* Alatunnisteen tyylit */
 .footer {
-    background-color: #fff;
-    box-shadow: 0 0 35px #cfcfcf7a;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    height: 15%;
+    background-color: #fff; /* Taustaväri */
+    box-shadow: 0 0 35px #cfcfcf7a; /* Reunusvarjostus */
+    display: flex; /* Asetetaan elementit riviin */
+    justify-content: space-between; /* Tasataan elementit välille */
+    align-items: center; /* Asetetaan elementit pystysuunnassa keskelle */
+    width: 100%; /* Leveys */
+    position: fixed; /* Kiinteä sijainti */
+    bottom: 0; /* Alareuna */
+    left: 0; /* Vasen reuna */
+    height: 15%; /* Korkeus */
 }
 
 .left {
-    margin-left: 10%;
+    margin-left: 10%; /* Vasen marginaali */
 }
 
 .left ul li {
-    list-style: none;
+    list-style: none; /* Poistetaan luettelomerkki */
 }
 
 .left ul li a {
-    color: #000;
-    text-shadow: 0 0 1px #1a0049;
-    text-decoration: none;
-    font-size: 22px;
+    color: #000; /* Tekstin väri */
+    text-shadow: 0 0 1px #1a0049; /* Tekstin varjostus */
+    text-decoration: none; /* Poistetaan linkin korostus */
+    font-size: 22px; /* Fontin koko */
 }
 
 .left ul li a:hover,
 .left ul li a.active {
-    font-weight: bold;
-    text-shadow: 0 0 3px #1a0049;
+    font-weight: bold; /* Lihavoitu teksti */
+    text-shadow: 0 0 3px #1a0049; /* Tekstin varjostus */
 }
 
 .right {
-    text-align: right;
-    margin-right: 10%;
+    text-align: right; /* Teksti oikealle */
+    margin-right: 10%; /* Oikea marginaali */
 }
 
+/* Otsikko ja teksti alatunnisteessa */
+.right h2 {
+    font-size: 20px; /* Fontin koko */
+}
+
+.right p {
+    font-size: 16px; /* Fontin koko */
+}
+
+/* Responsiivisuus */
 @media screen and (max-width: 1610px) {
+    /* Kotisivun pääsisältö responsiivisena */
     .home {
-        display: inline-block;
-        align-items: center;
-        margin-top: 100px;
-        margin-bottom: 150px;
+        display: inline-block; /* Asetetaan elementit riviin */
+        align-items: center; /* Asetetaan elementit pystysuunnassa keskelle */
+        margin-top: 100px; /* Ylämarginaali */
+        margin-bottom: 150px; /* Alamarginaali */
     }
     
     .info {
-        margin: 0;
-        margin-top: 350px;
+        margin: 0; /* Ulkoinen marginaali */
+        margin-top: 350px; /* Ylämarginaali */
     }
 }
 
 @media screen and (max-width: 1330px) {
     
     .container {
-        background-position: left;
+        background-position: left; /* Taustakuva vasemmalla */
     }
 
     .navbar {
-        height: 75%;
+        height: 75%; /* Palkin korkeus */
     }
 
     nav {
-        display: flex;
-        justify-content: center;
+        display: flex; /* Asetetaan elementit riviin */
+        justify-content: center; /* Tasataan elementit keskelle */
     }
     
     nav ul {
-        padding: 0;
-        margin: 0;
-        margin-top: 5%;
-        text-align: center;
+        padding: 0; /* Asetetaan sisäinen täyttötila nollaksi */
+        margin: 0; /* Asetetaan marginaali nollaksi */
+        margin-top: 5%; /* Ylämarginaali */
+        text-align: center; /* Teksti keskelle */
     }
     
     nav ul li {
-        list-style: none;
-        display: block;
-        margin-bottom: 30px;
+        list-style: none; /* Poistetaan luettelomerkki */
+        display: block; /* Elementit peräkkäin */
+        margin-bottom: 30px; /* Alamarginaali */
     }
     
     nav ul li a {
-        text-decoration: none;
-        color: #000;
-        text-shadow: 0 0 1px #1a0049;
-        font-size: 20px;
-        border-radius: 20px;
-        background-color: #fff;
-        padding: 10px 20px;
-        box-shadow: 0 0 35px #1a004950;
+        text-decoration: none; /* Poistetaan linkin korostus */
+        color: #000; /* Tekstin väri */
+        text-shadow: 0 0 1px #1a0049; /* Tekstin varjostus */
+        font-size: 20px; /* Fontin koko */
+        border-radius: 20px; /* Reunojen pyöristys */
+        background-color: #fff; /* Taustaväri */
+        padding: 10px 20px; /* Sisätila */
+        box-shadow: 0 0 35px #1a004950; /* Reunusvarjostus */
     }
 
     .info {
-        padding: 0 0;
-        margin-bottom: 35%;
-        margin-right: 0;
-        margin-top: 0;
+        padding: 0 0; /* Sisätila */
+        margin-bottom: 35%; /* Alamarginaali */
+        margin-right: 0; /* Oikea marginaali */
+        margin-top: 0; /* Ylämarginaali */
     }
 
     .info p {
-        margin-top: 50%;
-        margin-left: 15%;
-        margin-right: 15%;
+        margin-top: 50%; /* Ylämarginaali */
+        margin-left: 15%; /* Vasen marginaali */
+        margin-right: 15%; /* Oikea marginaali */
     }
     
     .item {
-        flex-direction: column-reverse;
+        flex-direction: column-reverse; /* Sarakekääntö */
     }
 
     .item img {
-        width: 100%;
-        max-width: 100%;
-        margin-bottom: 60px;
+        width: 100%; /* Leveys */
+        max-width: 100%; /* Maksimi leveys */
+        margin-bottom: 60px; /* Alamarginaali */
     }
 
     .item p {
-        max-width: 100%;
-        margin-bottom: 20px;
-        text-align: center;
+        max-width: 100%; /* Maksimi leveys */
+        margin-bottom: 20px; /* Alamarginaali */
+        text-align: center; /* Teksti keskelle */
     }
 
     .item:nth-child(even) img {
-        order: 1;
+        order: 1; /* Kuvan järjestys */
     }
     
     .item:nth-child(even) p {
-        order: 2;
+        order: 2; /* Tekstin järjestys */
     }
     
     .info h1 {
-        margin-top: 30%;
+        margin-top: 30%; /* Ylämarginaali */
     }
 
     .left {
-        display: none;
+        display: none; /* Piilotetaan vasen osa */
     }
 
     .right {
-        margin: auto;
-        text-align: center;
+        margin: auto; /* Marginaalit automaattisesti */
+        text-align: center; /* Teksti keskelle */
     }
 
     .right h2 {
-        font-size: 20px;
+        font-size: 20px; /* Fontin koko */
     }
 
     .right p {
-        font-size: 16px;
+        font-size: 16px; /* Fontin koko */
     }
 
     .footer {
-        background-color: #f0f0f0;
-        display: inline-block;
-        align-items: center;
-        position: fixed;
-        height: 20%;
+        background-color: #f0f0f0; /* Taustaväri */
+        display: inline-block; /* Asetetaan elementit riviin */
+        align-items: center; /* Asetetaan elementit pystysuunnassa keskelle */
+        position: fixed; /* Kiinteä sijainti */
+        height: 20%; /* Korkeus */
     }
 }

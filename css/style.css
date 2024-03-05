@@ -1,314 +1,329 @@
+/* Yleinen nollaus */
 * {
-    margin: 0;
-    padding: 0;
-    font-family: Comfortaa, sans-serif;
+    margin: 0; /* Asetetaan marginaali nollaksi */
+    padding: 0; /* Asetetaan täyttötila nollaksi */
+    font-family: Comfortaa, sans-serif; /* Valitaan kirjasintyyli */
 }
 
+/* Containerin tyyli */
 .container {
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,1)), url(img/rally_bg.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-left: 8%;
-    padding-right: 8%;
-    box-sizing: border-box;
+    width: 100%; /* Leveys täyttää koko näytön */
+    height: 100vh; /* Korkeus täyttää näytön korkeuden */
+    background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,1)), url(img/rally_bg.png); /* Taustakuva gradientilla ja kuvalla */
+    background-position: center; /* Taustakuvan sijainti keskellä */
+    background-size: cover; /* Taustakuva täyttää koko elementin */
+    background-repeat: no-repeat; /* Estetään taustakuvan toisto */
+    padding-left: 8%; /* Vasen täyttötila */
+    padding-right: 8%; /* Oikea täyttötila */
+    box-sizing: border-box; /* Sisällytetään reunat ja täyttötila laatikon kokoon */
 }
 
+/* Navigaatiopalkin tyyli */
 .navbar {
-    height: 15%;
-    display: flex;
-    align-items: center;
+    height: 15%; /* Palkin korkeus */
+    display: flex; /* Asetetaan elementit riviin */
+    align-items: center; /* Asetetaan elementit pystysuunnassa keskelle */
 }
 
+/* Logo */
 .logo {
-    width: 80px;
-    height: 80px;
-    cursor: pointer;
-    background-size: cover;
-    border-radius: 50% 90% 50% 90%;
-    box-shadow: 0 0 15px #fff;
+    width: 80px; /* Leveys */
+    height: 80px; /* Korkeus */
+    cursor: pointer; /* Osoittimen tyyppi */
+    background-size: cover; /* Taustakuva täyttää koko elementin */
+    border-radius: 50% 90% 50% 90%; /* Pyöristetyt reunat */
+    box-shadow: 0 0 15px #fff; /* Reunusvarjostus */
 }
 
+/* Navigaatiopalkin linkit */
 nav {
-    flex: 1;
-    text-align: center;
+    flex: 1; /* Joustava tila */
+    text-align: center; /* Teksti keskelle */
 }
 
 nav ul {
-    padding: 0;
-    margin: 0;
+    padding: 0; /* Sisäinen täyttötila nollaksi */
+    margin: 0; /* Marginaali nollaksi */
 }
 
 nav ul li {
-    list-style: none;
-    display: inline-block;
-    margin-left: 60px;
+    list-style: none; /* Poista luettelomerkki */
+    display: inline-block; /* Elementit peräkkäin */
+    margin-left: 60px; /* Vasen marginaali */
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #000;
-    text-shadow: 0 0 1px #1a0049;
-    font-size: 22px;
-    border-radius: 25px;
-    background-color: #fff;
-    padding: 10px 20px;
-    box-shadow: 0 0 20px #1a004950;
-    transition: all 0.3s ease;
+    text-decoration: none; /* Poista linkin korostus */
+    color: #000; /* Tekstin väri */
+    text-shadow: 0 0 1px #1a0049; /* Tekstin varjostus */
+    font-size: 22px; /* Fontin koko */
+    border-radius: 25px; /* Reunojen pyöristys */
+    background-color: #fff; /* Taustaväri */
+    padding: 10px 20px; /* Sisältötila */
+    box-shadow: 0 0 20px #1a004950; /* Reunusvarjostus */
+    transition: all 0.3s ease; /* Sulavat animaatiot */
 }
 
+/* Aktiivisen linkin animaatio */
 nav ul li a.active {
-    animation: rainbow 5s infinite;
-    font-weight: bold;
+    animation: rainbow 5s infinite; /* Sateenkaaren väri animaatio */
+    font-weight: bold; /* Lihavoitu teksti */
 }
 
+/* Sateenkaaren väri animaatio */
 @keyframes rainbow {
-0% {
-    box-shadow: 0 0 20px #000;
-}
-25% {
-    box-shadow: 0 0 20px #646464;
-}
-50% {
-    box-shadow: 0 0 20px #fff;
-}
-75% {
-    box-shadow: 0 0 20px #646464;
-}
-100% {
-    box-shadow: 0 0 20px #000;
-}
+    0% { box-shadow: 0 0 20px #000; }
+    25% { box-shadow: 0 0 20px #646464; }
+    50% { box-shadow: 0 0 20px #fff; }
+    75% { box-shadow: 0 0 20px #646464; }
+    100% { box-shadow: 0 0 20px #000; }
 }
 
+/* Hover-tilan tyyli */
 nav ul li a:hover,
 nav ul li a:focus {
-    box-shadow: 0 0 20px #fff;
-    font-weight: bold;
+    box-shadow: 0 0 20px #fff; /* Reunusvarjostus */
+    font-weight: bold; /* Lihavoitu teksti */
 }
 
+/* Kotisivun pääsisältö */
 .home {
-    display: flex;
-    align-items: center;
+    display: flex; /* Asetetaan elementit riviin */
+    align-items: center; /* Asetetaan elementit pystysuunnassa keskelle */
 }
 
+/* Tietolaatikko */
 .info {
-    flex-basis: 50%;
-    margin-right: 260px;
-    margin-bottom: 400px;
-    text-align: center;
+    flex-basis: 50%; /* Leveys */
+    margin-right: 260px; /* Oikea marginaali */
+    margin-bottom: 400px; /* Alamarginaali */
+    text-align: center; /* Teksti keskelle */
 }
 
 .info p {
-    margin-top: 10%;
+    margin-top: 10%; /* Ylämarginaali */
 }
 
+/* Kortit */
 .cards {
-    margin-bottom: 150px;
+    margin-bottom: 150px; /* Alamarginaali */
 }
 
+/* Otsikko */
 h1 {
-    color: #000;
-    font-size: 70px;
-    text-shadow: 0 0 4px #1a0049;
+    color: #000; /* Tekstin väri */
+    font-size: 70px; /* Fontin koko */
+    text-shadow: 0 0 4px #1a0049; /* Tekstin varjostus */
 }
 
+/* Perusteksti */
 p {
-    color: #000;
-    text-shadow: 0 0 1px #1a0049;
-    font-size: 22px;
-    line-height: 130%;
+    color: #000; /* Tekstin väri */
+    text-shadow: 0 0 1px #1a0049; /* Tekstin varjostus */
+    font-size: 22px; /* Fontin koko */
+    line-height: 130%; /* Riviväli */
 }
 
+/* Kortin tyyli */
 .card {
-    width: 350px;
-    height: 400px;
-    display:inline-table;
-    border-radius: 30px;
-    padding: 30px 30px;
-    box-sizing: border-box;
-    cursor: pointer;
-    background-position: center;
-    background-size: cover;
-    margin-right: 20px;
-    margin-top: 20px;
-    box-shadow: 0 0 15px #1a004950;
+    width: 350px; /* Leveys */
+    height: 400px; /* Korkeus */
+    display:inline-table; /* Asetetaan taulukkona */
+    border-radius: 30px; /* Reunojen pyöristys */
+    padding: 30px 30px; /* Sisältötila */
+    box-sizing: border-box; /* Laatikon koko sisältäen reunat ja täyttötilan */
+    cursor: pointer; /* Osoittimen tyyppi */
+    background-position: center; /* Taustakuvan sijainti keskellä */
+    background-size: cover; /* Taustakuva täyttää koko elementin */
+    margin-right: 20px; /* Oikea marginaali */
+    margin-top: 20px; /* Ylämarginaali */
+    box-shadow: 0 0 15px #1a004950; /* Reunusvarjostus */
 }
 
+/* Kortin linkki */
 .card a {
-    text-decoration: none;
+    text-decoration: none; /* Poista linkin korostus */
 }
 
+/* Kortin sisällön tyyli */
 .card_r {
-    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.9)), url(img/rally_road.png);
+    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.9)), url(img/rally_road.png); /* Taustakuva gradientilla ja kuvalla */
 }
 .card_c {
-    background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.9)), url(img/rally_car.png);
+    background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.9)), url(img/rally_car.png); /* Taustakuva gradientilla ja kuvalla */
 }
 .card_h {
-    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.9)), url(img/rally_historic.png);
+    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.9)), url(img/rally_historic.png); /* Taustakuva gradientilla ja kuvalla */
 }
 .card_ct {
-    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.9)), url(img/rally_contact.png);
+    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.9)), url(img/rally_contact.png); /* Taustakuva gradientilla ja kuvalla */
 }
 
+/* Kortin hover-tila */
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 20px #fff;
+    transform: translateY(-5px); /* Liikutetaan korttia ylöspäin */
+    box-shadow: 0 0 20px #fff; /* Reunusvarjostus */
 }
 
+/* Otsikko */
 h2 {
-    color: #000;
-    text-shadow: 0 0 2px #1a0049;
-    font-size: 25px;
+    color: #000; /* Tekstin väri */
+    text-shadow: 0 0 2px #1a0049; /* Tekstin varjostus */
+    font-size: 25px; /* Fontin koko */
 }
 
+/* Kortin sisältöteksti */
 .card p {
-    text-shadow: 0 0 1,2px #1a0049;
-    font-size: 22px;
+    text-shadow: 0 0 1,2px #1a0049; /* Tekstin varjostus */
+    font-size: 22px; /* Fontin koko */
 }
 
+/* Alatunnisteen tyyli */
 .footer {
-    background-color: #fff;
-    box-shadow: 0 0 35px #cfcfcf7a;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    height: 15%;
+    background-color: #fff; /* Taustaväri */
+    box-shadow: 0 0 35px #cfcfcf7a; /* Reunusvarjostus */
+    display: flex; /* Asetetaan elementit riviin */
+    justify-content: space-between; /* Tasataan elementit välille */
+    align-items: center; /* Asetetaan elementit pystysuunnassa keskelle */
+    width: 100%; /* Leveys */
+    position: fixed; /* Kiinteä sijainti */
+    bottom: 0; /* Alareuna */
+    left: 0; /* Vasen reuna */
+    height: 15%; /* Korkeus */
 }
 
+/* Vasemman alanurkan tyyli */
 .left {
-    margin-left: 10%;
+    margin-left: 10%; /* Vasen marginaali */
 }
 
 .left ul li {
-    list-style: none;
+    list-style: none; /* Poista luettelomerkki */
 }
 
 .left ul li a {
-    color: #000;
-    text-shadow: 0 0 1px #1a0049;
-    text-decoration: none;
-    font-size: 22px;
+    color: #000; /* Tekstin väri */
+    text-shadow: 0 0 1px #1a0049; /* Tekstin varjostus */
+    text-decoration: none; /* Poista linkin korostus */
+    font-size: 22px; /* Fontin koko */
 }
 
+/* Aktiivisen linkin hover-tila */
 .left ul li a:hover,
 .left ul li a.active {
-    font-weight: bold;
-    text-shadow: 0 0 3px #1a0049;
+    font-weight: bold; /* Lihavoitu teksti */
+    text-shadow: 0 0 3px #1a0049; /* Tekstin varjostus */
 }
 
+/* Oikean alanurkan tyyli */
 .right {
-    text-align: right;
-    margin-right: 10%;
+    text-align: right; /* Teksti oikealle */
+    margin-right: 10%; /* Oikea marginaali */
 }
 
+/* Oikean alanurkan otsikko */
+.right h2 {
+    font-size: 20px; /* Fontin koko */
+}
+
+/* Oikean alanurkan teksti */
+.right p {
+    font-size: 16px; /* Fontin koko */
+}
+
+/* Responsiivisuus */
 @media screen and (max-width: 1610px) {
+    /* Kotisivun pääsisältö responsiivisena */
     .home {
-        display: inline-block;
-        align-items: center;
-        margin-top: 100px;
-        margin-bottom: 150px;
+        display: inline-block; /* Asetetaan elementit riviin */
+        align-items: center; /* Asetetaan elementit pystysuunnassa keskelle */
+        margin-top: 100px; /* Ylämarginaali */
+        margin-bottom: 150px; /* Alamarginaali */
     }
     
     .info {
-        margin: 0;
-        margin-top: 25%;
+        margin: 0; /* Ulkoinen marginaali */
+        margin-top: 25%; /* Ylämarginaali */
     }
 
     .info p {
-        margin-top: 25%;
-        margin-bottom: 20%;
+        margin-top: 25%; /* Ylämarginaali */
+        margin-bottom: 20%; /* Alamarginaali */
     }
 
     .card {
-        width: 100%;
+        width: 100%; /* Leveys */
     }
 }
 
 @media screen and (max-width: 1330px) {
-    
+    /* Taustakuvan sijainti vasemmalla */
     .container {
-        background-position: left;
+        background-position: left; /* Taustakuva vasemmalla */
     }
 
+    /* Navigaatiopalkin korkeus */
     .navbar {
-        height: 75%;
+        height: 75%; /* Palkin korkeus */
     }
 
+    /* Navigointivalikon keskitys */
     nav {
-        display: flex;
-        justify-content: center;
+        display: flex; /* Asetetaan elementit riviin */
+        justify-content: center; /* Tasataan elementit keskelle */
     }
     
+    /* Navigointivalikon linkkien asettelu */
     nav ul {
-        padding: 0;
-        margin: 0;
-        margin-top: 5%;
-        text-align: center;
+        padding: 0; /* Sisäinen täyttötila nollaksi */
+        margin: 0; /* Marginaali nollaksi */
+        margin-top: 5%; /* Ylämarginaali */
+        text-align: center; /* Teksti keskelle */
     }
     
+    /* Navigointivalikon linkkien tyyli */
     nav ul li {
-        list-style: none;
-        display: block;
-        margin-bottom: 30px;
+        list-style: none; /* Poista luettelomerkki */
+        display: block; /* Elementit peräkkäin */
+        margin-bottom: 30px; /* Alamarginaali */
     }
     
+    /* Linkkien tyyli */
     nav ul li a {
-        text-decoration: none;
-        color: #000;
-        text-shadow: 0 0 1px #1a0049;
-        font-size: 20px;
-        border-radius: 20px;
-        background-color: #fff;
-        padding: 10px 20px;
-        box-shadow: 0 0 35px #1a004950;
+        text-decoration: none; /* Poista linkin korostus */
+        color: #000; /* Tekstin väri */
+        text-shadow: 0 0 1px #1a0049; /* Tekstin varjostus */
+        font-size: 20px; /* Fontin koko */
+        border-radius: 20px; /* Reunojen pyöristys */
+        background-color: #fff; /* Taustaväri */
+        padding: 10px 20px; /* Sisätila */
+        box-shadow: 0 0 35px #1a004950; /* Reunusvarjostus */
     }
 
+    /* Tietolaatikon tyyli */
     .info {
-        padding: 0 0;
-        margin-bottom: 35%;
-        margin-right: 0;
-        margin-top: 0;
+        padding: 0 0; /* Sisätila */
+        margin-bottom: 35%; /* Alamarginaali */
+        margin-right: 0; /* Oikea marginaali */
+        margin-top: 0; /* Ylämarginaali */
     }
 
+    /* Tietolaatikon teksti */
     .info p {
-        margin-top: 50%;
-        margin-left: 15%;
-        margin-right: 15%;
+        margin-top: 50%; /* Ylämarginaali */
+        margin-left: 15%; /* Vasen marginaali */
+        margin-right: 15%; /* Oikea marginaali */
     }
 
-    .info h1 {
-        margin-top: 30%;
+    /* Korttien asettelu */
+    .card {
+        flex-direction: column-reverse; /* Sarakekääntö */
     }
 
-    .left {
-        display: none;
-    }
-
-    .right {
-        margin: auto;
-        text-align: center;
-    }
-
-    .right h2 {
-        font-size: 20px;
-    }
-
-    .right p {
-        font-size: 16px;
-    }
-
-    .footer {
-        background-color: #f0f0f0;
-        display: inline-block;
-        align-items: center;
-        position: fixed;
-        height: 20%;
+    /* Kortin kuva */
+    .card img {
+        width: 100%; /* Leveys */
+        max-width: 100%; /* Maksimi leveys */
+        margin-bottom: 60px; /* Alamarginaali */
     }
 }
